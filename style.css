@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(221, 220, 220);
+}
+
+body{
+    background-color: rgb(13, 3, 48);
+    color: rgb(221, 220, 220);
+    height: 100vh;
+    line-height: 24px;
+}
+
+/************************************/
+/***************MENU*****************/
+/************************************/
+
+#menu {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(8, 1, 34);
+}
+
+#menu nav ul {
+    display: flex;
+}
+
+#menu nav ul li {
+    margin-right: 20px;
+}
+
+/************************************/
+/************CONTAINER***************/
+/************************************/
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+/************************************/
+/****************H*******************/
+/************************************/
+
+h1{
+    font-size: 20px;
+}
+
+h2, h2 span {
+    font-size: 18px;
+}
+
+.anim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#target {
+    display: flex;
+    margin-left: .5rem;
+}
+#target::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateY(-4px);
+  right: -5px;
+  animation: anim 0.8s linear infinite;
+}
+
+/************************************/
+/*************A PROPOS***************/
+/************************************/
+
+#propos {
+    width: 500px;
+    height: 200px;
+    margin: 50px 0;
+    background-color: rgb(8, 1, 34);
+    border-radius: 5%;
+    position: relative;
+    padding: 20px;
+}
+
+#propos span {
+    position: absolute;
+}
+
+#propos span p:last-child {
+    margin-top: 50px;
+}
+
+/************************************/
+/*************PROJETS****************/
+/************************************/
+
+#projet h3 {
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+#projet div ul .projet-title {
+    margin-bottom: 100px;
+}
+
+.projet-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.projet-contents {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projet div ul li ul li img{
+    width: 200px;
+    height: 100px;
+}
+
+/************************************/
+/***************FOOTER***************/
+/************************************/
+
+#contact {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(8, 1, 34);
+    margin-top: 50px;
+}
+
+#contact nav ul {
+    width: 100%;
+    display: flex;
+}
+
+#contact nav ul li {
+    margin-right: 50px;
+}
+
+/************************************/
+/************SCROLLBAR***************/
+/************************************/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%); 
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 53%);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 33%); 
+  }
