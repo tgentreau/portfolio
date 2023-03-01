@@ -1,5 +1,5 @@
 const target = document.getElementById('target');
-let array = ["27 ans", "Développeur", "Joueur", "Créatif", "Curieux"];
+let array = ["28 ans", "Développeur", "Joueur", "Créatif", "Curieux"];
 let wordIndex = 0;
 let letterIndex = 0;
 
